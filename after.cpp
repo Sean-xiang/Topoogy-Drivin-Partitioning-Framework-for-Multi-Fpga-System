@@ -52,7 +52,7 @@ struct bigdata {
 void GetLine( vector<int> &output , FILE *fp ) {
     string temp = "/0";
     char tempch  ;
-    int a = 0  ;
+    int a = 1  ;
     fscanf( fp,"%c", &tempch ) ;
     while ( tempch != '\n') {
       if ( tempch != ' ' && tempch != '\n') {
