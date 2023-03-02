@@ -50,7 +50,7 @@ struct bigdata {
 };
 
 void GetLine( vector<int> &output , FILE *fp ) {
-    string temp = "";
+    string temp = "/0";
     char tempch  ;
     int a = 0  ;
     fscanf( fp,"%c", &tempch ) ;
@@ -221,7 +221,7 @@ class FpgaGrah{
          for ( int i = 0 ; i < Callpairdistance[0].size() ; i ++ ) {
            if ( Callpairdistance[nowC][i] < maxFdist  ) { // S(Vi,d)
              if ( !isfixed(i) && i != nowC ) { // movable node and ???O??v
-               availablec.push_back( i ) ;  // »Ý­n³Q³B²zªºCircuit
+               availablec.push_back( i ) ;  // ï¿½Ý­nï¿½Qï¿½Bï¿½zï¿½ï¿½Circuit
              }
            } // if
          } // for
@@ -309,7 +309,7 @@ class FpgaGrah{
     int nowF = -1 ; // which fpga is currently reference
 
     for ( int i = 0 ; i < fixnode.size() ; i++ ) {
-      result[fixnode[i]] = GCnode[fixnode[i]].site ; // fixnode?¡±result don't move
+      result[fixnode[i]] = GCnode[fixnode[i]].site ; // fixnode?ï¿½ï¿½result don't move
     } // for
     for ( int j = 0 ; j < Cddt.size() ; j++ ) {   // Add to Q
       if( !isfixed(j)){
@@ -555,7 +555,7 @@ class FpgaGrah{
    	result.resize(GCnode.size(), -1 ) ;
     int putF = 0 ;
     for ( int i = 0 ; i < fixnode.size() ; i++ ) {
-      result[fixnode[i]] = GCnode[fixnode[i]].site ; // fixnode?¡±result don't move Fcapacity is changed already
+      result[fixnode[i]] = GCnode[fixnode[i]].site ; // fixnode?ï¿½ï¿½result don't move Fcapacity is changed already
     } // for
     for ( int j = 0 ; j < GCnode.size() ; j++ ) {
       putF = rand() % GFnode.size() ;
@@ -586,7 +586,7 @@ class FpgaGrah{
       GCnodprioritysmalltohigh.push_back(temp) ;
     }// for
     for ( int i = 0 ; i < fixnode.size() ; i++ ) {
-      result[fixnode[i]] = GCnode[fixnode[i]].site ; // fixnode?¡±result don't move Fcapacity is changed already
+      result[fixnode[i]] = GCnode[fixnode[i]].site ; // fixnode?ï¿½ï¿½result don't move Fcapacity is changed already
     } // for
 
     for ( int j = 0 ; j < Cddt.size() ; j++ ) {   // Add to Q
