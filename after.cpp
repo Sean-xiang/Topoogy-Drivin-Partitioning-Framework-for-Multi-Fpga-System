@@ -50,9 +50,9 @@ struct bigdata {
 };
 
 void GetLine( vector<int> &output , FILE *fp ) {
-    string temp = "/0";
+    string temp = "";
     char tempch  ;
-    int a = 1  ;
+    int a = 0  ;
     fscanf( fp,"%c", &tempch ) ;
     while ( tempch != '\n') {
       if ( tempch != ' ' && tempch != '\n') {
